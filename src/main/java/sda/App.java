@@ -79,7 +79,9 @@ public class App {
 
         List<Books> x = Arrays.asList();
         File sortedBooks = new File("C:\\Users\\aohaj\\IdeaProjects\\dataprocessing\\src\\main\\resources\\sortedBooks.csv");
-        FileUtils.writeLines(sortedBooks, Collections.singleton(x));
+        FileUtils.writeLines(sortedBooks, ksiazki);
+
+
 
     }
 }

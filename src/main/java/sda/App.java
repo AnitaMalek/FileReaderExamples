@@ -4,8 +4,11 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.LineIterator;
 
 import java.awt.print.Book;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.net.IDN;
 import java.util.*;
 
 public class App {
@@ -68,9 +71,16 @@ public class App {
         }
         ksiazki.sort(new PorownanieKsiazek());
 
+
         for (Books x : ksiazki) {
             System.out.println(x);
         }
+
+
+        List<Books> x = Arrays.asList();
+        File sortedBooks = new File("C:\\Users\\aohaj\\IdeaProjects\\dataprocessing\\src\\main\\resources\\sortedBooks.csv");
+        FileUtils.writeLines(sortedBooks, Collections.singleton(x));
+
     }
 }
 

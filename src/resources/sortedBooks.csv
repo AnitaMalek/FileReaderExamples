@@ -1,0 +1,8 @@
+[Books{ID=805080481, cat='book', name='The Book of Three', price=5.99, inStock=true, author='Lloyd Alexander', series='The Chronicles of Prydain', sequence='1', genre=fantasy}
+ Books{ID=812550706, cat='book', name='Ender's Game', price=6.99, inStock=true, author='Orson Scott Card', series='Ender', sequence='1', genre=scifi}
+ Books{ID=380014300, cat='book', name='Nine Princes In Amber', price=6.99, inStock=true, author='Roger Zelazny', series='the Chronicles of Amber', sequence='1', genre=fantasy}
+ Books{ID=553573403, cat='book', name='A Game of Thrones', price=7.99, inStock=true, author='George R.R. Martin', series='"A Song of Ice and Fire"', sequence='1', genre=fantasy}
+ Books{ID=553579908, cat='book', name='A Clash of Kings', price=7.99, inStock=true, author='George R.R. Martin', series='"A Song of Ice and Fire"', sequence='2', genre=fantasy}
+ Books{ID=553293354, cat='book', name='Foundation', price=7.99, inStock=true, author='Isaac Asimov', series='Foundation Novels', sequence='1', genre=scifi}
+ Books{ID=812521390, cat='book', name='The Black Company', price=6.99, inStock=false, author='Glen Cook', series='The Chronicles of The Black Company', sequence='1', genre=fantasy}
+ Books{ID=441385532, cat='book', name='Jhereg', price=7.95, inStock=false, author='Steven Brust', series='Vlad Taltos', sequence='1', genre=fantasy}]

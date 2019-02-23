@@ -11,10 +11,12 @@ import java.io.IOException;
 import java.net.IDN;
 import java.util.*;
 
+import static sda.CountingSort.sort;
+
 public class App {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
 
-
+//throws IO Exception u góry powino być do zadańz example
         //zad.1&2: wczytywanie z pliku simpleExample i wyświetlanie na konsoli
 //        File file = new File("C:\\Users\\aohaj\\IdeaProjects\\dataprocessing\\src\\main\\resources\\simpleExample.txt");
 //
@@ -55,32 +57,37 @@ public class App {
 
         // zad. 5: lista obiektów ksiązek, posortować wg dostępności  i ceny, wyświetlić w konsoli
 
-        File file2 = new File("C:\\Users\\aohaj\\IdeaProjects\\dataprocessing\\src\\main\\resources\\books.csv");
+//        File file2 = new File("C:\\Users\\aohaj\\IdeaProjects\\dataprocessing\\src\\main\\resources\\books.csv");
+//
+//        List<Books> ksiazki = new ArrayList<Books>();
+//
+//        LineIterator fileContents = FileUtils.lineIterator(file2, "UTF-8");
+//        while (fileContents.hasNext()) {
+//            String[] line = fileContents.nextLine().split(",");
+//            try {
+//                ksiazki.add(new Books(Integer.parseInt(line[0]), line[1], line[2],
+//                        Double.parseDouble(line[3]), Boolean.parseBoolean(line[4]), line[5], line[6],
+//                        line[7], line[8]));
+//            } catch (NumberFormatException ex) {
+//            }
+//        }
+//        ksiazki.sort(new PorownanieKsiazek());
+//
+//
+//        for (Books x : ksiazki) {
+//            System.out.println(x);
+//        }
+//
+//
+//        List<Books> x = Arrays.asList();
+//        File sortedBooks = new File("C:\\Users\\aohaj\\IdeaProjects\\dataprocessing\\src\\main\\resources\\sortedBooks.csv");
+//        FileUtils.writeLines(sortedBooks, ksiazki);
 
-        List<Books> ksiazki = new ArrayList<Books>();
+        int [] unsorted = {5, 11, 10, 9, 8, 7, 15, 10};
+        System.out.println("Nieposortowana: " + Arrays.toString(unsorted));
 
-        LineIterator fileContents = FileUtils.lineIterator(file2, "UTF-8");
-        while (fileContents.hasNext()) {
-            String[] line = fileContents.nextLine().split(",");
-            try {
-                ksiazki.add(new Books(Integer.parseInt(line[0]), line[1], line[2],
-                        Double.parseDouble(line[3]), Boolean.parseBoolean(line[4]), line[5], line[6],
-                        line[7], line[8]));
-            } catch (NumberFormatException ex) {
-            }
-        }
-        ksiazki.sort(new PorownanieKsiazek());
-
-
-        for (Books x : ksiazki) {
-            System.out.println(x);
-        }
-
-
-        List<Books> x = Arrays.asList();
-        File sortedBooks = new File("C:\\Users\\aohaj\\IdeaProjects\\dataprocessing\\src\\main\\resources\\sortedBooks.csv");
-        FileUtils.writeLines(sortedBooks, ksiazki);
-
+        int [] sorted = sort(unsorted);
+        System.out.println("Posortowana: " + Arrays.toString(sort(unsorted)));
 
 
     }

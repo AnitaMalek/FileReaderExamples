@@ -3,6 +3,7 @@ package sda;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.LineIterator;
 
+import javax.swing.*;
 import java.awt.print.Book;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -14,9 +15,9 @@ import java.util.*;
 import static sda.CountingSort.sort;
 
 public class App {
-    public static void main(String[] args)  {
+    public static void main(String[] args) throws IOException{
 
-//throws IO Exception u góry powino być do zadańz example
+
         //zad.1&2: wczytywanie z pliku simpleExample i wyświetlanie na konsoli
 //        File file = new File("C:\\Users\\aohaj\\IdeaProjects\\dataprocessing\\src\\main\\resources\\simpleExample.txt");
 //
@@ -83,14 +84,10 @@ public class App {
 //        File sortedBooks = new File("C:\\Users\\aohaj\\IdeaProjects\\dataprocessing\\src\\main\\resources\\sortedBooks.csv");
 //        FileUtils.writeLines(sortedBooks, ksiazki);
 
-        int [] unsorted = {5, 11, 10, 9, 8, 7, 15, 10};
-        System.out.println("Nieposortowana: " + Arrays.toString(unsorted));
-
-        int [] sorted = sort(unsorted);
-        System.out.println("Posortowana: " + Arrays.toString(sort(unsorted)));
 
 
     }
-}
+    }
+
 
 
